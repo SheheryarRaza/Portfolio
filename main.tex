@@ -1,0 +1,192 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez (Base Template)
+% Adapted by: Gemini
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Muhmmad Sheheryar Raza} \\ \vspace{1pt}
+    \small 923066105428 $|$ \href{mailto:m.sheheryarraza@gmail.com}{\underline{m.sheheryarraza@gmail.com}} $|$
+    \href{https://linkedin.com/in/muhammad-sheheryar-raza}{\underline{linkedin/muhammad-sheheryar-raza}} $|$
+    \href{https://github.com/SheheryarRaza}{\underline{github.com/SheheryarRaza}}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{Summary}
+  \resumeSubHeadingListStart
+    \resumeItem{Results-driven .NET Developer with expertise in C/#, ASP.NET Core, Entity Framework Core, and SQL Server. Experienced in building RESTful APIs and delivering end-to-end web solutions. Proven success through projects like an e-commerce platform, an IGNITE-funded IoT smart home system, and a cross-device clipboard synchronization platform.}
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Gift University}{2020 -- 2024}
+      {BS Computer Science}{}
+      \resumeItemListStart
+        \resumeItem{Relevant Coursework: Data Structures and Algorithms, Database Management Systems, Software Engineering, Web Development}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {.NET Core Developer}{Oct 2024 -- Jul 2025}
+      {Eratech}{}
+      \resumeItemListStart
+        \resumeItem{Developed backend modules for both web and desktop applications using ASP.NET Core and C\#.}
+        \resumeItem{Built and maintained APIs with Entity Framework Core and SQL Server; implemented JWT-based authentication and secure session handling.}
+        \resumeItem{Contributed to POS system features, worked on WPF UI integration, and gained practical experience on production-level backend architecture.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+          {\textbf{CopyHere – Cross-Device Clipboard Synchronization Platform} $|$ \emph{}}{Jul 2025 -- Aug 2025}
+          \resumeItemListStart
+            \resumeItem{Designed and developed the entire backend architecture using ASP.NET Core 8.0 with Clean Architecture principles.}
+            \resumeItem{SignalR for real-time communication, Entity Framework Core, SQL Server, JWT authentication, and Vanilla JavaScript frontend.}
+            \resumeItem{Real-time clipboard sync across devices, clipboard history with search and filtering, device management, tagging, and rate limiting.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Task Management API} $|$ \emph{}}{Jun 2025 -- Jul 2025}
+          \resumeItemListStart
+            \resumeItem{Sole developer responsible for designing API structure, implementing authentication, and building core features.}
+            \resumeItem{ASP.NET Core, Entity Framework Core, SQL Server, JWT, Role-based Authorization.}
+            \resumeItem{Task/subtask management with soft deletion, prioritization, tagging, background notifications, centralized error handling, and structured logging.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{E-Commerce Web Application} $|$ \emph{}}{Feb 2025 -- Mar 2025}
+          \resumeItemListStart
+            \resumeItem{Full-stack developer handling backend logic, database design, and API creation.}
+            \resumeItem{ ASP.NET Core, Entity Framework Core, .NET Identity, MVC Architecture, SQL Server.}
+            \resumeItem{Secure authentication, product catalog, order processing modules, and RESTful APIs}
+          \resumeItemListEnd
+
+
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+  \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+      \textbf{Languages}{: C\#, Python, Angular (Basic)} \\
+      \textbf{Frameworks/ Libraries}{: ASP.NET Core, .NET Core, Entity Framework Core, .NET Identity, WPF, Ajax} \\
+      \textbf{Web Technologies}{: RESTful APIs, JWT Authentication, MVC, LINQ, Clean Architecture} \\
+      \textbf{Databases}{: SQL Server} \\
+      \textbf{Tools / Platforms}{: Visual Studio, Git, Swagger, Postman} \\
+    }}
+  \end{itemize}
+
+% The Certifications and Awards sections are not present in the provided template, so they are omitted.
+
+%-------------------------------------------
+\end{document}

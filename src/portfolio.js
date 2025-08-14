@@ -20,26 +20,25 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
+  username: "Muhammad Sheheryar Raza",
+  title: "Hi all, I'm Sheheryar",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "A passionate .NET Developer 🚀 with expertise in C#, ASP.NET Core, Entity Framework Core, and SQL Server. Experienced in building RESTful APIs and delivering end-to-end web solutions with a focus on clean architecture principles."
   ),
-  resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+  resumeLink: "", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
+  github: "https://github.com/SheheryarRaza",
+  linkedin: "https://www.linkedin.com/in/muhammad-sheheryar-raza/",
+  gmail: "m.sheheryarraza@gmail.com",
+  // gitlab: "https://gitlab.com/saadpasta",
+  // facebook: "https://www.facebook.com/saad.pasta7",
+  // medium: "https://medium.com/@saadpasta",
+  // stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -49,14 +48,17 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle:
+    "PASSIONATE .NET DEVELOPER WHO BUILDS ROBUST AND SCALABLE WEB SOLUTIONS",
   skills: [
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+      "⚡ Develop backend modules for web and desktop applications using ASP.NET Core and C#"
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
     emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+      "⚡ Build and maintain RESTful APIs with Entity Framework Core and SQL Server"
+    ),
+    emoji(
+      "⚡ Implement secure authentication systems with JWT and role-based authorization"
     )
   ],
 
@@ -65,56 +67,64 @@ https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
-      skillName: "html-5",
+      skillName: "C#",
+      fontAwesomeClassname: "fab fa-microsoft"
+    },
+    {
+      skillName: "ASP.NET Core",
+      fontAwesomeClassname: "fas fa-terminal"
+    },
+    {
+      skillName: "Entity Framework",
+      fontAwesomeClassname: "fas fa-table"
+    },
+    {
+      skillName: "SQL Server",
+      fontAwesomeClassname: "fas fa-database"
+    },
+    {
+      skillName: "HTML5",
       fontAwesomeClassname: "fab fa-html5"
     },
     {
-      skillName: "css3",
+      skillName: "CSS3",
       fontAwesomeClassname: "fab fa-css3-alt"
-    },
-    {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
     },
     {
       skillName: "JavaScript",
       fontAwesomeClassname: "fab fa-js"
     },
     {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
-    },
-    {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
-    },
-    {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
-    },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
-    },
-    {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
-    },
-    {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    },
-    {
-      skillName: "python",
+      skillName: "Python",
       fontAwesomeClassname: "fab fa-python"
     },
     {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
+      skillName: "Angular",
+      fontAwesomeClassname: "fab fa-angular"
+    },
+    {
+      skillName: "MVC",
+      fontAwesomeClassname: "fas fa-sitemap"
+    },
+    {
+      skillName: "REST APIs",
+      fontAwesomeClassname: "fas fa-cloud"
+    },
+    {
+      skillName: "JWT",
+      fontAwesomeClassname: "fas fa-key"
+    },
+    {
+      skillName: "SignalR",
+      fontAwesomeClassname: "fas fa-broadcast-tower"
+    },
+    {
+      skillName: "Git",
+      fontAwesomeClassname: "fab fa-git-alt"
+    },
+    {
+      skillName: "Clean Architecture",
+      fontAwesomeClassname: "fas fa-layer-group"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -126,23 +136,17 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      schoolName: "Gift University",
+      logo: require("./assets/images/Gift-UNIVERISTY-LOGO.png"), // You can replace this with your university logo
+      subHeader: "BS Computer Science",
+      duration: "2020 - 2024",
+      desc: "Graduated with coursework in Data Structures and Algorithms, Database Management Systems, Software Engineering, and Web Development.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Data Structures and Algorithms",
+        "Database Management Systems",
+        "Software Engineering",
+        "Web Development"
       ]
-    },
-    {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
     }
   ]
 };
@@ -153,16 +157,16 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
+      Stack: "C# & .NET", //Insert stack or technology you have experience in
       progressPercentage: "90%" //Insert relative proficiency in percentage
     },
     {
-      Stack: "Backend",
-      progressPercentage: "70%"
+      Stack: "Backend Development",
+      progressPercentage: "85%"
     },
     {
-      Stack: "Programming",
-      progressPercentage: "60%"
+      Stack: "Database & APIs",
+      progressPercentage: "80%"
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -174,29 +178,17 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      role: ".NET Core Developer",
+      company: "Eratech",
+      companylogo: require("./assets/images/download.jpeg"), // You can replace this with company logo
+      date: "October 2024 - July 2025",
+      desc: "Developed backend modules for both web and desktop applications using ASP.NET Core and C#. Built and maintained APIs with Entity Framework Core and SQL Server.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Developed backend modules for web and desktop applications using ASP.NET Core and C#",
+        "Built and maintained APIs with Entity Framework Core and SQL Server",
+        "Implemented JWT-based authentication and secure session handling",
+        "Contributed to POS system features and worked on WPF UI integration"
       ]
-    },
-    {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
-    {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     }
   ]
 };
@@ -206,35 +198,49 @@ To know how to get github key look at readme.md */
 
 const openSource = {
   showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "Featured Projects",
+  subtitle:
+    "PROJECTS THAT DEMONSTRATE MY TECHNICAL EXPERTISE AND PROBLEM-SOLVING SKILLS",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/CopyHere.png"), // You can replace this with project screenshots
+      projectName: "CopyHere - Cross-Device Clipboard Sync",
+      projectDesc:
+        "A real-time clipboard synchronization platform built with ASP.NET Core 8.0, SignalR, Entity Framework Core, and SQL Server. Features include real-time sync, clipboard history, device management, and rate limiting.",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
+          name: "View Project",
+          url: "https://github.com/SheheryarRaza/CopyHere" // Update with actual project link
         }
-        //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/TaskManagement.png"), // You can replace this with project screenshots
+      projectName: "Task Management API",
+      projectDesc:
+        "A comprehensive task management system with ASP.NET Core, Entity Framework Core, SQL Server, JWT authentication, and role-based authorization. Features include task/subtask management, prioritization, tagging, and notifications.",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://nextu.se/"
+          name: "View Project",
+          url: "https://github.com/SheheryarRaza/TaskManagmentApi" // Update with actual project link
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/ECOM Store.png"), // You can replace this with project screenshots
+      projectName: "E-Commerce Web Application",
+      projectDesc:
+        "Full-stack e-commerce solution built with ASP.NET Core, Entity Framework Core, .NET Identity, MVC Architecture, and SQL Server. Features secure authentication, product catalog, and order processing modules.",
+      footerLink: [
+        {
+          name: "View Project",
+          url: "https://github.com/SheheryarRaza/Bulky_MVC" // Update with actual project link
         }
       ]
     }
@@ -246,57 +252,46 @@ const bigProjects = {
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
+  title: emoji("Technical Expertise 🏆 "),
   subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+    "Core competencies and technical achievements that define my development approach !",
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
+      title: "Backend Development",
       subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
+        "Expertise in building robust backend systems with ASP.NET Core, Entity Framework Core, and SQL Server. Implemented clean architecture principles and secure authentication systems.",
+      image: require("./assets/images/Codeing.jpeg"),
+      imageAlt: "Backend Development",
       footerLink: [
         {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
+          name: "View Projects",
+          url: "https://github.com/SheheryarRaza"
         }
       ]
     },
     {
-      title: "Google Assistant Action",
+      title: "API Development",
       subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
+        "Experience in designing and implementing RESTful APIs with proper authentication, authorization, and error handling. Built scalable solutions for real-time communication using SignalR.",
+      image: require("./assets/images/API DEV.png"),
+      imageAlt: "API Development",
       footerLink: [
         {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
+          name: "View Projects",
+          url: "https://github.com/SheheryarRaza"
         }
       ]
     },
 
     {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
+      title: "Database Design",
+      subtitle:
+        "Proficient in database design and management using SQL Server and Entity Framework Core. Experience with data modeling, optimization, and implementing efficient data access patterns.",
+      image: require("./assets/images/Database.jpeg"),
+      imageAlt: "Database Design",
       footerLink: [
-        {name: "Certification", url: ""},
-        {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
-        }
+        {name: "View Projects", url: "https://github.com/SheheryarRaza"}
       ]
     }
   ],
@@ -306,44 +301,44 @@ const achievementSection = {
 // Blogs Section
 
 const blogSection = {
-  title: "Blogs",
+  title: "Technical Writing",
   subtitle:
-    "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
-  displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
+    "I believe in sharing knowledge and documenting my learning journey in software development.",
+  displayMediumBlogs: "false", // Set true to display fetched medium blogs instead of hardcoded ones
   blogs: [
     {
-      url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
-      title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
+      url: "https://github.com/SheheryarRaza",
+      title: "Building RESTful APIs with ASP.NET Core",
       description:
-        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
+        "A comprehensive guide to building scalable and maintainable RESTful APIs using ASP.NET Core and Entity Framework Core."
     },
     {
-      url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
-      title: "Why REACT is The Best?",
+      url: "https://github.com/SheheryarRaza",
+      title: "Implementing Clean Architecture in .NET",
       description:
-        "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
+        "Best practices and patterns for implementing clean architecture principles in .NET applications for better maintainability and testability."
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Talks Sections
 
 const talkSection = {
-  title: "TALKS",
+  title: "TECHNICAL PRESENTATIONS",
   subtitle: emoji(
-    "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"
+    "SHARING KNOWLEDGE AND EXPERIENCES IN SOFTWARE DEVELOPMENT 🎯"
   ),
 
   talks: [
     {
-      title: "Build Actions For Google Assistant",
-      subtitle: "Codelab at GDG DevFest Karachi 2019",
-      slides_url: "https://bit.ly/saadpasta-slides",
-      event_url: "https://www.facebook.com/events/2339906106275053/"
+      title: "Introduction to ASP.NET Core",
+      subtitle: "Technical presentation on modern .NET development",
+      slides_url: "https://github.com/SheheryarRaza",
+      event_url: "https://github.com/SheheryarRaza"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Podcast Section
@@ -356,7 +351,7 @@ const podcastSection = {
   podcast: [
     "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set to false since you don't have podcast content yet
 };
 
 // Resume Section
@@ -372,18 +367,18 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+  // number: "+92-306-6105428",
+  email_address: "m.sheheryarraza@gmail.com"
 };
 
 // Twitter Section
 
 const twitterDetails = {
   userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  display: false // Set to false since you don't have Twitter mentioned in your resume
 };
 
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = true; // Set to true since you're actively looking for opportunities
 
 export {
   illustration,
